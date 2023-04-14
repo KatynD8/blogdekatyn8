@@ -1,0 +1,97 @@
+body{
+    margin:auto;
+    max-width: 1400px;
+    background: url("ressources/contactbackground\(1\).png");
+    font-family:'Exo 2', sans-serif;
+    
+}
+h2,h3 {
+    margin: 0;
+}
+h2{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 15px;
+}
+.card img {
+    
+    border-radius: 50%;
+    background: white;
+    
+    box-shadow:  0 0 0 0 white;
+    animation: pulse 2.0s infinite;
+
+    shape-outside: margin-box;
+   
+}
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 13px rgba(0,0,0,0.01)
+    }
+}
+.container {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.card{
+    
+    border: solid 5px white;
+    border-radius: 25px;
+    width : 300px;
+    height: 550px;
+    color: lime;
+    background: url("ressources/cardbackground.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.card-top {
+   
+    text-align: center;
+    padding: 10px;
+
+}
+
+.card .icon{
+    font-size: 20px;
+    
+}
+
+
+.card-infos{
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card-infos p{
+    text-align: center;
+}
+
+.button{
+    margin-bottom: 5px;
+    text-align: center;
+    color: lime;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.button:hover{
+    color: green;
+}
+
+
+
+.backbutton{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}

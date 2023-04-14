@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="article.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/471665c4dc.js" crossorigin="anonymous"></script>
+    
+    
+    
+    <title>Crewpow E-sport</title>
+</head>
+<body>
+    <nav>
+        <h1>A Social Dev Journey</h1>
+        <div class="onglets">
+            <a href="index.html">Home</a>
+            <a href="pagecontact.html">Contacts</a>
+            <a href="#">Articles</a>
+        </div>
+      </nav>
+
+    <section class="pagearticle">
+        <div class="titrearticle">
+            <h1>LE SITE DU CREWPOW</h1>
+        </div>
+            <img src="ressources/art2illu.webp" alt ="salle comble lors d'un évènement e-sportif">
+    
+        <div class="contenu">
+        <h3>Le site :</h3>
+        <p>Puis-ce que j'imagine que vous voulez tout de suite voir de quoi il s'agit, voici cher visiteur : </p>
+        <a href="crewpow.html">Découvre l'univers du Crewpow</a>
+        <p> Alors oui, si t’es familier avec le dev, ça casse pas trop pattes à un caneton j’suis d’accord. C’est une maquette en plus, pas de panique si 
+            certains boutons ne fonctionnent pas, un jour peut-être (ou pas) !</p>
+
+
+        <h3>Ce qu'il m'a appris :</h3>
+        <p>Ce site m’a permis d’un peu me faire la main sur la structure en display:flex, et j’ai passé un bon moment à trouver un design sympa 
+            (je reste moyennement satisfait de cet aspect). Ma grande défaite d’un point de vue design, c’est cette putain de ligne en dessous du lien vers le discord,
+            tout tenté, pas moyen de la faire disparaitre !</p>
+        <p>La partie qui m’a prise le plus de temps, et en même temps l’interet principal de la page niveau dev, c’est le flip des cartes. D’un point de vu structure, on
+             trouve des objets “container” contenant un “wrapper”, contenant lui même une div “card” elle même composé de deux div “cardfront” et “cardback”.<br>
+            Il est ensuite nécessaire d’appliquer le CSS de façon à ce que cardfront et cardback soit dos à dos (comme une vraie carte finalement). On s’en sort à base de rotateY 
+            et de backface-visibility.</p> 
+            <p>Enfin, le dernier petit truc que j’aime bien sûr cette page, c’est l’intégration de awesome font qui permet d’utiliser des petites icônes paramétrables (Discord et Twitter en l’occurrence)</p>
+                
+        <h3>Les améliorations possible</h3>
+        <p>La structure est catastrophique, je pense, il sera inutilement complexe de rajouter des joueurs par exemple. Le design reste assez basique même s’il rend bien,
+             je trouve. J’aimerais aussi rajouter des petites animations lors du switch des cartes, il va me falloir approfondir ma connaissance de JavaScript.</p>
+        <p>Avec le recul, j’aurais du créée un modèle de boite et l’enregistrer en commentaire (c’est comme ça que ce blog fonctionne) afin de créer du contenu 
+            de manière plus simple (même si pas optimal, j’en ai conscience). Au lieu de ça, le site fonctionne avec une seule boite dupliquée 5 fois, ce qui m’a empêché d’utiliser
+             les photos des joueurs comme images de fond de boite, ce qui était prévu à la base.</p>
+        
+        <p>En full gadget-flex, je me servirais surement de cette page pour m’entrainer à intégrer un lecteur deezer, il serait dommage que le monde passe à côté de la playlist divine !</p>
+
+
+        </div>
+      </section>
+
+      <footer>
+        <h2>&copy; 2023, by Katyn8</h2>
+        <div class="socialmedia">
+          <p><a href="https://www.facebook.com/thomaspmr.theveu/"><i class="fa-brands fa-facebook" style="color: #00FF00;"></i></p></a>
+          <p><a href="https://twitter.com/nytak8"><i class="fa-brands fa-twitter" style="color: #00FF00;"></i></p></a>
+          <p><a href="https://www.instagram.com/katyn8/"><i class="fa-brands fa-square-instagram" style="color: #00FF00;"></i></p></a>
+          
+        </div>
+      </footer>
+
+    
+</body>
+</html>

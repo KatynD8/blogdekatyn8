@@ -1,0 +1,182 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f1f1;
+    font-family: 'Exo 2', sans-serif;
+    background-image: linear-gradient(to bottom, rgba(255,128,255,0.5), rgba(0,0,128,0.5));
+    text-align: center;
+}
+
+h3{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+
+.container {
+    translate: 60px;
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap :30px;
+    margin: 10px 0;
+}
+.card-wrapper {
+    position: relative;
+    min-height: 750px;
+    perspective: 2000px;
+    perspective-origin: top;
+}
+
+.card-wrapper:hover .card {                                          /* Element qui englobe une carte, comme une sleeve, permet de controler les deux faces*/
+    transform :rotateY(180deg);
+}
+
+.card {                                                              /* Element carte*/
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition : transform 0.8s cubic-bezier(0.86,0,0.07,1);
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.card-front {                                                             /*Recto des cartes*/
+    position : absolute;
+    background: #9b6d9e;
+    height: 100%;
+    width: 100%;
+    padding: 28px;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-front p {                                      /*Texte contenu dans la carte face recto*/
+   
+
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.card-back {                                                 /* Face arrière des cartes*/
+    position : absolute;
+    background: #2e0130;
+    height: 100%;
+    width: 100%;
+    padding: 28px;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.discord-logo {                                                  /*bouton discord visuel*/
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+   
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .span{
+    text-decoration: none;
+  }
+  .discord-logo i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .discord-logo:hover {
+ 
+    background-color: #677bc4;
+  }
+
+  .navbar {                                                                       /*Nav bar, boutons et comportement*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .navbar a:hover {
+    background-color:rgba(0,0,128,0.5);
+    border-radius: 5px;
+  }
+  .btn-twitter {                                                            /*Bouton twitter*/
+    display: inline-block;
+    background-color: white;
+    color: violet;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height:0;
+    height: 30px;
+    width: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-twitter:hover {
+    background-color: #0c87b8;
+  }
+  
+  .btn-twitter i {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .backbutton{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    
+}
