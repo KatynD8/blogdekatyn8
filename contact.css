@@ -48,6 +48,7 @@ h3{
     height: 550px;
     color: lime;
     background: url("ressources/cardbackground.jpg");
+    object-fit: cover;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
