@@ -120,6 +120,8 @@ h3{
   .discord-logo:hover {
  
     background-color: #677bc4;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .navbar {                                                                       /*Nav bar, boutons et comportement*/

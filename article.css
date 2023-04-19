@@ -24,6 +24,10 @@ nav .onglets a{
     color: #7FFF00;
 }
 
+nav img{
+    border-radius: 50%;
+}
+
 .pagearticle{
     margin: 15px;
     padding: 15px;

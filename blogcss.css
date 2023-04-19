@@ -14,6 +14,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 1250px;
 }
 nav h1 {
     font-family:'Exo 2', sans-serif;
@@ -28,6 +29,9 @@ nav .onglets a{
     text-decoration: none;
     color: #7FFF00;
     margin-right: 10px;
+}
+nav img{
+    border-radius: 50%;
 }
 .articles {
     margin-top: 30px;
